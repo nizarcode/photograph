@@ -1,0 +1,214 @@
+@font-face{
+    font-family: "grandhotel";
+    src : url("font/grandhotel-regular-webfont.woff") format("woff");
+    src : url("font/grandhotel-regular-webfont.woff2") format("woff2");
+}
+@font-face{
+    font-family: "dancing";
+    src : url("font/dancingscript-regular-webfont.woff") format("woff");
+    src : url("font/dancingscript-regular-webfont.woff2") format("woff2");
+}
+@font-face{
+    font-family: 'antipasto';
+    src : url('font/antipasto/AntipastoPro-Bold_trial.ttf') format('truetype');
+}
+
+section {
+    padding: 20px 0;
+}
+.gone , .materialboxed , .working ,.contact-gone{
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(-50px);
+}
+.aRight{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s;
+}
+.aLeft{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 1s;
+}
+.appear{
+    opacity: 1;
+    transform: translateY(0);
+    transform: translateX(0);
+}
+.brand-logo img{
+    margin-right: 5px;
+    margin-top: 5px;
+}
+nav{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .2);
+}
+.sidenav{
+    background-color: rgb(204, 204, 204) !important;
+}
+.slider{
+    margin-top: -60px;
+}
+.change{
+    background-color: rgba(0, 0, 0, .8);
+}
+.about p{
+    text-align: justify ;
+    text-indent: 3em;
+    line-height: 25px;
+    font-size: 17px;
+}
+.about img{
+    border-radius: 50%;
+    border: 8px solid rgba(0, 0, 0, .5);
+    width: 280px;
+    height: 280px;
+    
+}
+.parallax-container .services .parallax img{
+    filter: grayscale(.3);
+    opacity: .7 !important;
+}
+.services h3 , .about {
+    text-shadow: 1px 1px 1px black;
+
+}
+.card{
+    border-radius: 15px !important;
+    transition: .5s;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 40px 8px -20px rgba(0, 0, 0, .5);
+}
+.card img{
+    height: 170px;
+    border-top-right-radius:10px !important;
+    border-top-left-radius:10px !important;
+}
+.card .card-content{
+    height: 130px;
+}
+.parallax-container{
+    height: 20%;
+}
+.portfolio , .about{
+    background-image: url('myimg/leaves-1350175_1280.jpg');
+    background-attachment:fixed;
+    background-size:100%;
+
+}
+.slides.head{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.head img{
+    opacity: 0;
+}
+.comment{
+    background-color: rgb(214, 212, 212);
+}
+.comment .caption img{
+    opacity: 1 !important;
+    height: 130px !important;
+    width: 130px !important;
+    margin-top: 30px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+}
+.comment h4{
+    margin-bottom: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-shadow: 1px 1px 1px white;
+   
+}
+.comment .slides h4{
+    margin-bottom: 10px;
+}
+.comment .caption h4{
+    font-family: "dancing" ,cursive;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+   
+
+}
+.comment .caption h5{
+    font-family: "grandhotel" ,cursive;
+    text-shadow: 1px 1px 1px white;
+    font-size: 32px !important;
+}
+
+.slides .flag img{
+    height: 18px !important;
+    width: 20px !important;
+    margin-right: 20px;
+    border-radius: 0 !important;
+    border: 0 !important;
+}
+
+.parallax-container .row{
+   padding: 50px 30px;
+}
+.parallax-container .row i{
+    padding-top: 17px;
+    transition: .3s;
+}
+.parallax-container .row i:hover{
+    transform: translateY(-10px);
+}
+.work .part-work{
+    border-bottom: 3px solid rgb(22, 243, 22);
+    padding-bottom: 5px;
+}
+.work h5{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+}
+.contact {
+    background-color: rgb(17, 16, 16);
+    padding: 50px;
+}
+.contact i{
+    margin-top: 15px;
+    margin-right: 10px;
+    background-color: rgb(48, 47, 47);
+    padding: 5px;
+    border-radius: 50%;
+
+}
+.contact ul li{
+    display: inline;
+}
+.contact img{
+    height: 40px;
+    width: 42px;
+    transition: .4s;
+}
+.contact img:hover{
+    opacity: .6;
+    transform: translateY(-3px);
+}
+.contact .copyright{
+    margin-top: 60px;
+}
+
+@media (min-width:1000px){
+    .wedding-fix{
+        font-size: 22px;
+        
+    }
+    
+   
+}
+@media (max-width:500px){
+    .margin-img{
+        margin-bottom: 20px;
+        
+    }
+    .comment{
+        height: 600px !important;
+    }
+}
